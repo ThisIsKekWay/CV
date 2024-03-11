@@ -1,0 +1,13 @@
+{% block top %}
+<div class="top">
+    <div class="container">
+        <div class="logo">
+            <a href="/">Главная</a>
+        </div>
+        <div class="navmenu">
+            <a href="{{ url_for('portfolio') }}">Портфолио</a>
+            <a href="{{ url_for('contacts') }}">Контакты</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

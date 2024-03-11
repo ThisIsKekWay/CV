@@ -1,0 +1,38 @@
+{% block main %}
+    <div class="main_info">
+        <div class="foto_and_info">
+            <div class="foto_and_info_foto">
+                <div class="foto_and_info_img">
+                    <img src="/static/img/foto.jpg" alt="Какой-то чел">
+                </div>
+            </div>
+
+            <div class="foto_and_info_info">
+                <div class="text">
+                    <ul>
+                        <li>Имя: Константин</li>
+                        <li>Возраст: 26 лет</li>
+                        <li>Город: Ухта</li>
+                        <li>Образование:</li>
+                        <ul>
+                            <li>Высшее техническое.<br>Направление: электротехника и электроэнергетика.<br>Дата
+                                окончания: 2019 г.<br></li>
+                            <li>Диплом о профессиональной переподготовке.<br> Направление: программист python. Дата
+                                окончания: 2024 г.
+                            </li>
+                        </ul>
+                        <li> Краткая информация: Начинающий python-разработчик и свитчер. Пишу на python чуть больше
+                            двух лет. И мне это нравится.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills">
+            {% block skills %}
+                {% include 'skills.html' %}
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

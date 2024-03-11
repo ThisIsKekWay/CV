@@ -1,0 +1,55 @@
+{% block skills %}
+    <div class="skills">
+        <div class="skills-container">
+            <div class="header-text">
+                <p>Навыки</p>
+            </div>
+            <div class="skills-list">
+                <div class="info-container">
+                    <div class="info-header" onclick="toggleInfo(this)">
+                        Python<br>
+                        <progress value="85" max="100"></progress>
+                    </div>
+                    <div class="info-content" style="display: none;">
+                        <ul>
+                            <li>Знаю типы данных, операторы, управляющие конструкции.</li>
+                            <li>Опыт работы с модулями и библиотеками, такими как os, requests, json, datetime.</li>
+                            <li>Примеры: <a href="https://github.com/ThisIsKekWay/Deep_Python_Fantasies" >Ссылка</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-container">
+                    <div class="info-header" onclick="toggleInfo(this)">
+                        Django<br>
+                        <progress value="75" max="100"></progress>
+                    </div>
+                    <div class="info-content" style="display: none;">
+                        <ul>
+                            <li>Знаю структуру проекта.</li>
+                            <li>Есть опыт работы с ORM</li>
+                            <li>Умею работать с шаблонизатором, создавать формы.</li>
+                            <li>Знаю как настроить админ-панель</li>
+                            <li>Могу собрать рабочий билд маркетплейса. <a href="https://kekway.pythonanywhere.com/">Ссылка</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-container">
+                    <div class="info-header" onclick="toggleInfo(this)">
+                        Flask<br>
+                        <progress value="65" max="100"></progress>
+                    </div>
+                    <div class="info-content" style="display: none;">
+                        <ul>
+                            <li>Данный проект реализован на Flask</li>
+                            <li>Есть опыт работы с ORM</li>
+                            <li>Умею работать с шаблонизатором, создавать формы.</li>
+                            <li> Пример: <a href="https://github.com/ThisIsKekWay/Deep_Python_Fantasies" >Ссылка</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
