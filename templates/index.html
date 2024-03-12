@@ -3,15 +3,13 @@
 {% block title %} Главная {% endblock %}
 
 {% block content %}
+
+    {% block top %}
+        {% include 'top.html' %}
+    {% endblock %}
+
     {% block main %}
         {% include 'main_info.html' %}
     {% endblock %}
 
-    {% block portfolio %}
-        {% include 'port.html' %}
-    {% endblock %}
-
-    {% block contacts %}
-        {% include 'contact.html' %}
-    {% endblock %}
 {% endblock %}
