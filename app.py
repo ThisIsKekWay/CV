@@ -1,7 +1,7 @@
 from flask import Flask, render_template
-
+from flask_frozen import Freezer
 app = Flask(__name__)
-
+freezer = Freezer(app)
 
 @app.route('/')
 def hello_world():  # put application's code here
@@ -24,4 +24,4 @@ def contacts():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    freezer.freeze()
